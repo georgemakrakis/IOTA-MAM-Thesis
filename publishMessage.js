@@ -59,6 +59,7 @@ fetchStartCount().then(v =>
 
     // Now the mam state is set, we can add the message.
     publish(newMessage);
+
 }).catch(ex =>
 {
     console.log(ex);
