@@ -1,5 +1,5 @@
 // Thanks to Lewis -the potatoe- Freiberg for the code, we made some edits :) //
-let Mam = require('../lib/mam.node.js');
+let Mam = require('./lib/mam.node.js');
 let IOTA = require('iota.lib.js');
 let fs = require('fs');
 // LIVE NODE !
@@ -25,7 +25,7 @@ async function fetchStartCount(){
 async function publish(packet)
 {
     // Create the message.
-    let trytes = iota.utils.toTrytes(JSON.stringify(packet))
+    let trytes = iota.utils.toTrytes(JSON.stringify(packet));
     let message = Mam.create(mamState, trytes);
     // Set the mam state so we can keep adding messages.
     mamState = message.state;
