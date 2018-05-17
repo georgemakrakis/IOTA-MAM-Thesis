@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="DHT22 data can now be published on Tangle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetchMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publishMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/publishMessage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,20 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fetchMessage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fetchMessage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="publishMessage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/publishMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="333">
+              <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -205,7 +194,7 @@
       <workItem from="1526552742727" duration="211000" />
       <workItem from="1526553072492" duration="2693000" />
       <workItem from="1526565863160" duration="1563000" />
-      <workItem from="1526568826505" duration="2564000" />
+      <workItem from="1526568826505" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize commit">
       <created>1521822876987</created>
@@ -242,11 +231,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526401656717</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="DHT22 data can now be published on Tangle">
+      <created>1526593913217</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526593913217</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30348000" />
+    <option name="totallyTimeSpent" value="30583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -260,13 +256,13 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502965" side_tool="true" weight="0.27151638" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32924336" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32889345" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32889345" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32889345" />
       <window_info anchor="right" id="Mongo Explorer" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49703503" weight="0.2704918" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16603774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16603774" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -351,7 +347,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Updated .gitignore" />
     <MESSAGE value="Changed to restricted mode and added side_key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed to restricted mode and added side_key" />
+    <MESSAGE value="DHT22 data can now be published on Tangle" />
+    <option name="LAST_COMMIT_MESSAGE" value="DHT22 data can now be published on Tangle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,8 +507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="333">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
         </state>
       </provider>
     </entry>

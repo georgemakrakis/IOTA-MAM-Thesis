@@ -63,6 +63,7 @@ sensor.read(22, 4, function(err, temperature, humidity) {
             mamState = Mam.changeMode(mamState, 'restricted',side_key);
 
             //let newMessage = Date.now() + ' ' + yourMessage;
+
             let newMessage = Date.now() + ' '+ 'temp: ' + temperature.toFixed(1) + '  C, ' +
                 'humidity: ' + humidity.toFixed(1) + '%';
 
@@ -74,5 +75,3 @@ sensor.read(22, 4, function(err, temperature, humidity) {
         });
     }
 });
-
-
