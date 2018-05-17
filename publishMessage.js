@@ -2,19 +2,16 @@
 let Mam = require('./lib/mam.node.js');
 let IOTA = require('iota.lib.js');
 let fs = require('fs');
-// LIVE NODE !
+let sensor = require('node-dht-sensor');
+
+//LIVE NODE !
 let iota = new IOTA({ provider: `https://testnet140.tangle.works:443` });
 
-let yourMessage = 'MAM Send from home pc ITS AWESOME 2';
+let yourMessage = 'MAM Send from RPi at foss';
 
 //SEED must be 81 chars of A-Z9 //
 let seed = fs.readFileSync('s33d.txt', 'utf8');
 let side_key = fs.readFileSync('side_key.txt','utf8');
-
-//This was in case tha a newline character was at the end of file
-//seed = seed.slice(0, -1);
-
-console.log(seed.length);
 
 let mamState = null;
 
@@ -46,28 +43,36 @@ async function publish(packet)
 // Initiate the mam state with the given seed at index 0.
 mamState = Mam.init(iota, seed, 2, 0);
 
-// Fetch all the messages in the stream.
-fetchStartCount().then(v =>
-{
-    // Log the messages.
-    let startCount = v.messages.length;
-    console.log('Messages already in the stream:');
-    for (let i = 0; i < v.messages.length; i++){
-        let msg = v.messages[i];
-        console.log(JSON.parse(iota.utils.fromTrytes(msg)));
+sensor.read(22, 4, function(err, temperature, humidity) {
+    if (!err)
+    {
+        // Fetch all the messages in the stream.
+        fetchStartCount().then(v =>
+        {
+            // Log the messages.
+            let startCount = v.messages.length;
+            console.log('Messages already in the stream:');
+            for (let i = 0; i < v.messages.length; i++){
+                let msg = v.messages[i];
+                console.log(JSON.parse(iota.utils.fromTrytes(msg)));
+            }
+            console.log();
+
+            // To add messages at the end we need to set the startCount for the mam state$
+            mamState = Mam.init(iota, seed, 2, startCount);
+            mamState = Mam.changeMode(mamState, 'restricted',side_key);
+
+            //let newMessage = Date.now() + ' ' + yourMessage;
+            let newMessage = Date.now() + ' '+ 'temp: ' + temperature.toFixed(1) + '  C, ' +
+                'humidity: ' + humidity.toFixed(1) + '%';
+
+            // Now the mam state is set, we can add the message.
+            publish(newMessage);
+        }).catch(ex =>
+        {
+            console.log(ex);
+        });
     }
-    console.log();
-
-    // To add messages at the end we need to set the startCount for the mam state to the current amount of messages.
-    mamState = Mam.init(iota, seed, 2, startCount);
-    mamState = Mam.changeMode(mamState, 'restricted',side_key);
-
-    let newMessage = Date.now() + ' ' + yourMessage;
-
-    // Now the mam state is set, we can add the message.
-    publish(newMessage);
-
-}).catch(ex =>
-{
-    console.log(ex);
 });
+
+
