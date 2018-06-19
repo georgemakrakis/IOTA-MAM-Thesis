@@ -95,6 +95,7 @@ sensor.read(22, 4, function (err, temperature, humidity) {
 
             // Now the mam state is set, we can add the message.
             publish(newMessage);
+
         }).catch(ex => {
             console.log(ex);
         });
