@@ -3,7 +3,7 @@ let Mam = require('./lib/mam.node.js');
 let IOTA = require('iota.lib.js');
 let fs = require('fs');
 // LIVE NODE !
-let iota = new IOTA({ provider: `https://testnet140.tangle.works:443` });
+let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
 
 let yourMessage = 'IOTA MAM Thesis send from pc';
 

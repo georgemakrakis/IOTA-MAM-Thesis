@@ -1,11 +1,11 @@
 let Mam = require('./lib/mam.node.js');
 let fs = require('fs');
 let IOTA = require('iota.lib.js');
-let iota = new IOTA({ provider: `https://testnet140.tangle.works:443` });
+let iota = new IOTA({ provider: `https://field.carriota.com:443` });
 
 // Init State
 // INSERT THE ROOT IN HERE!
-let root = 'CTQY9DTZCBCRLLBREERZAGMTQZWNZEGSVTWAFDOBDZQOWAUWERMINASWAUCUSTZFZEPJNGOJJAAIISURS';
+let root = 'MYWPOCXXMZFWCU9NEWHPFLBOSEDLWEJZZYOYZGPRCZRYTNOKGWQGXGLSDPDFSYDYJXGAHQZYBPTESRSFG';
 
 // Initialise MAM State
 let mamState = Mam.init(iota);

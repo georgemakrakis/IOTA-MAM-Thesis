@@ -5,7 +5,7 @@ let fs = require('fs');
 let sensor = require('node-dht-sensor');
 
 //LIVE NODE !
-let iota = new IOTA({ provider: `https://testnet140.tangle.works:443` });
+let iota = new IOTA({ provider: `https://nodes.devnet.thetangle.org:443` });
 
 let yourMessage = 'MAM Send from RPi at foss';
 
