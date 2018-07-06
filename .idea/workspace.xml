@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="Added back the simple publish message file">
+    <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fetchMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publishMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/publishMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publishMessageSensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/publishMessageSensor.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="fetchMessage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fetchMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+            <state relative-caret-position="54">
+              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -29,7 +27,7 @@
       <file leaf-file-name="publishMessageSensor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/publishMessageSensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="126">
               <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
             </state>
           </provider>
@@ -38,8 +36,8 @@
       <file leaf-file-name="publishMessage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/publishMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+            <state relative-caret-position="126">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -97,10 +95,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="179" />
-    <option name="y" value="-4" />
-    <option name="width" value="1299" />
-    <option name="height" value="736" />
+    <option name="x" value="1984" />
+    <option name="width" value="1303" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -108,8 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +117,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.publishMessage">
+  <component name="RunManager" selected="Node.js.fetchMessage">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -221,7 +218,9 @@
       <workItem from="1526568826505" duration="2799000" />
       <workItem from="1527782135379" duration="158000" />
       <workItem from="1529401682398" duration="1817000" />
-      <workItem from="1529860625779" duration="1707000" />
+      <workItem from="1529860625779" duration="2399000" />
+      <workItem from="1529953820154" duration="48000" />
+      <workItem from="1530879393069" duration="647000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize commit">
       <created>1521822876987</created>
@@ -272,14 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529401778852</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed IOTA provider node">
+      <created>1529864980180</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529864980180</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34277000" />
+    <option name="totallyTimeSpent" value="35664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="1984" y="0" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -290,8 +296,8 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502965" side_tool="true" weight="0.27151638" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.39156628" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32882884" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.39156628" />
       <window_info anchor="right" id="Mongo Explorer" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49703503" weight="0.2695783" />
       <window_info id="Capture Tool" order="2" />
@@ -303,46 +309,46 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.40061477" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.40061477" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32889345" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32924336" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16603774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32889345" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Mongo Explorer" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49811321" visible="true" weight="0.27151638" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.40061477" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32924336" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5018868" side_tool="true" weight="0.27198365" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49811321" visible="true" weight="0.27151638" />
+      <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16603774" />
+      <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +390,8 @@
     <MESSAGE value="Changed to restricted mode and added side_key" />
     <MESSAGE value="DHT22 data can now be published on Tangle" />
     <MESSAGE value="Added back the simple publish message file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added back the simple publish message file" />
+    <MESSAGE value="Changed IOTA provider node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed IOTA provider node" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,7 +686,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/publishMessageSensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="126">
           <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
         </state>
       </provider>
@@ -707,15 +714,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+        <state relative-caret-position="54">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+        <state relative-caret-position="126">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
         </state>
       </provider>
     </entry>

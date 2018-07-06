@@ -1,7 +1,7 @@
 let Mam = require('./lib/mam.node.js');
 let fs = require('fs');
 let IOTA = require('iota.lib.js');
-let iota = new IOTA({ provider: `https://field.carriota.com:443` });
+let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
 
 // Init State
 // INSERT THE ROOT IN HERE!
