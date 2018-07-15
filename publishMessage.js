@@ -5,7 +5,7 @@ let fs = require('fs');
 // LIVE NODE !
 let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
 
-let yourMessage = 'IOTA MAM Thesis send from pc';
+let yourMessage = 'First IOTA MAM Thesis send from pc at Plegma Labs';
 
 //SEED must be 81 chars of A-Z9 //
 let seed = fs.readFileSync('s33d.txt', 'utf8');
@@ -62,10 +62,38 @@ fetchStartCount().then(v =>
     mamState = Mam.init(iota, seed, 2, startCount);
     mamState = Mam.changeMode(mamState, 'restricted',side_key);
 
-    let newMessage = Date.now() + ' ' + yourMessage;
+    //Before write the dat clear the file and add header
+    fs.writeFile('data_published', '', function(err) {
+        if (err)
+        {
+            return console.log(err);
+        }
+    });
+    fs.appendFile('data_published', 'time_created,message_num' +'\n', function(err) {
+        if (err)
+        {
+            return console.log(err);
+        }
+    });
 
-    // Now the mam state is set, we can add the message.
-    publish(newMessage);
+    for(let i=0;i<10;i++)
+    {
+        let newMessage = Date.now() + ',' + i;
+
+        // Now the mam state is set, we can add the message.
+        publish(newMessage);
+
+        fs.appendFile('data_published', newMessage+'\n', function(err) {
+            if(err) {
+                return console.log(err);
+            }
+        });
+    }
+
+    // let newMessage = 'time_created: '+Date.now() + ' message_num: ' + 123456789111;
+    //
+    // // Now the mam state is set, we can add the message.
+    // publish(newMessage);
 
 }).catch(ex =>
 {

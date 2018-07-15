@@ -1,7 +1,7 @@
 let Mam = require('./lib/mam.node.js');
 let fs = require('fs');
 let IOTA = require('iota.lib.js');
-let iota = new IOTA({ provider: `https://field.carriota.com:443` });
+let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
 
 // Init State
 // INSERT THE ROOT IN HERE!
@@ -22,23 +22,26 @@ const publish = async packet =>
     return message.root
 };
 
-// let dataOut = [];
-// // Callback used to pass data out of the fetch
-// const logData = data => dataOut.push(JSON.parse(iota.utils.fromTrytes(data)));
-//
-// const execute = async () =>
-// {
-//     let resp = await Mam.fetch(root, 'restricted', side_key, logData);
-//     console.log(resp);
-//     console.log(dataOut[dataOut.length-1]);
-// };
+let dataOut = [];
+let prevLength = 0;
 // Callback used to pass data out of the fetch
-const logData = data => console.log(JSON.parse(iota.utils.fromTrytes(data)));
+const logData = data => dataOut.push(JSON.parse(iota.utils.fromTrytes(data)));
 
 const execute = async () =>
 {
-    let resp = await Mam.fetch(root, 'restricted', side_key, logData);
-    console.log(resp)
+    while(true)
+    {
+        dataOut = [];
+        let resp = await Mam.fetch(root, 'restricted', side_key, logData);
+
+        if(dataOut.length>prevLength)
+        {
+            prevLength = dataOut.length;
+            console.log(dataOut[dataOut.length-1]+' time_received: '+ Date.now());
+            //resp is the next root
+            console.log(resp);
+        }
+    }
 };
 
 execute();
