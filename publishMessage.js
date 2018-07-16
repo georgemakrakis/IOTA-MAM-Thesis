@@ -78,12 +78,10 @@ fetchStartCount().then(v =>
 
     for(let i=0;i<10;i++)
     {
-        let newMessage = Date.now() + ',' + i;
-
         // Now the mam state is set, we can add the message.
-        publish(newMessage);
+        publish(i);
 
-        fs.appendFile('data_published', newMessage+'\n', function(err) {
+        fs.appendFile('data_published', Date.now() + ',' + i+'\n', function(err) {
             if(err) {
                 return console.log(err);
             }
