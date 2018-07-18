@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/fetchAndPublish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fetchMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publishMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/publishMessage.js" afterDir="false" />
@@ -15,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fetchMessage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fetchMessage.js">
+      <file leaf-file-name="fetchAndPublish.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+            <state relative-caret-position="283">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -27,29 +28,17 @@
       <file leaf-file-name="publishMessage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/publishMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="83" column="58" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="58" />
+            <state relative-caret-position="270">
+              <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="95" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messageClass.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messageClass.js">
+      <file leaf-file-name="fetchMessage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fetchMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="4" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fetchMessagesServer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fetchMessagesServer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+            <state relative-caret-position="246">
+              <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -84,6 +73,7 @@
         <option value="$PROJECT_DIR$/messageClass.js" />
         <option value="$PROJECT_DIR$/fetchMessagesServer.js" />
         <option value="$PROJECT_DIR$/publishMessage.js" />
+        <option value="$PROJECT_DIR$/fetchAndPublish.js" />
         <option value="$PROJECT_DIR$/fetchMessage.js" />
       </list>
     </option>
@@ -119,12 +109,27 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IOTA-MAM-Thesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IOTA-MAM-Thesis" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fetchMessagesServer.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fetchAndPublish.js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -166,6 +171,7 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="fetchAndPublish" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="fetchAndPublish.js" working-dir="$PROJECT_DIR$" />
     <configuration name="fetchMessage" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="fetchMessage.js" working-dir="$PROJECT_DIR$" />
     <configuration name="fetchMessagesServer" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="fetchMessagesServer.js" working-dir="$PROJECT_DIR$" />
     <configuration name="publishMessage" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="publishMessage.js" working-dir="$PROJECT_DIR$" />
@@ -196,6 +202,7 @@
       <item itemvalue="Node.js.fetchMessage" />
       <item itemvalue="Node.js.fetchMessagesServer" />
       <item itemvalue="Node.js.publishMessage" />
+      <item itemvalue="Node.js.fetchAndPublish" />
       <item itemvalue="Node.js.publishMessageSensor" />
     </list>
   </component>
@@ -229,7 +236,9 @@
       <workItem from="1531311519238" duration="20000" />
       <workItem from="1531647653160" duration="2443000" />
       <workItem from="1531651168625" duration="2149000" />
-      <workItem from="1531724790590" duration="2272000" />
+      <workItem from="1531724790590" duration="3883000" />
+      <workItem from="1531861144154" duration="1593000" />
+      <workItem from="1531901103038" duration="2670000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize commit">
       <created>1521822876987</created>
@@ -301,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531651300958</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Some first implementation of Response time of message begun. See READ.ME">
+      <created>1531727371800</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1531727371800</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61085000" />
+    <option name="totallyTimeSpent" value="66959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="7" width="1301" height="772" extended-state="6" />
@@ -320,12 +336,12 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32882884" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.39608434" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.41566265" />
       <window_info anchor="right" id="Mongo Explorer" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49703503" weight="0.2695783" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16602613" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16602613" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="SciView" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -416,7 +432,8 @@
     <MESSAGE value="Added back the simple publish message file" />
     <MESSAGE value="Changed IOTA provider node" />
     <MESSAGE value="Publish now writes to file, also added &quot;server&quot; just in case we need it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Publish now writes to file, also added &quot;server&quot; just in case we need it" />
+    <MESSAGE value="Some first implementation of Response time of message begun. See READ.ME" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some first implementation of Response time of message begun. See READ.ME" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,28 +441,13 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/publishMessage.js</url>
           <line>27</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="55" />
+      <option name="time" value="59" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/publishMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fetchMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -735,30 +737,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchMessagesServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="216">
           <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="83" column="58" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="58" />
+        <state relative-caret-position="270">
+          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="95" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+        <state relative-caret-position="246">
+          <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
         </state>
       </provider>
     </entry>

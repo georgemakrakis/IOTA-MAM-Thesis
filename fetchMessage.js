@@ -55,11 +55,22 @@ const execute = async () =>
     let resp = await Mam.fetch(root, 'restricted', side_key, logData);
     dataOutput.forEach(function (data) {
        console.log(data);
-        fs.appendFile('data_received', Date.now() + ',' + data+'\n', function(err) {
-            if(err) {
-                return console.log(err);
-            }
-        });
+
+        //For Response Time
+        //=======================
+        // fs.appendFile('data_received', Date.now() + ',' + data+'\n', function(err) {
+        //     if(err) {
+        //         return console.log(err);
+        //     }
+        // });
+
+        //For RTT (Round trip time - Service time)
+        //=======================
+        fs.appendFile('data_RTT', data+'\n', function(err) {
+                if(err) {
+                    return console.log(err);
+                }
+            });
     });
     console.log(resp);
 };

@@ -61,6 +61,7 @@ fetchStartCount().then(v =>
     // To add messages at the end we need to set the startCount for the mam state to the current amount of messages.
     mamState = Mam.init(iota, seed, 2, startCount);
     mamState = Mam.changeMode(mamState, 'restricted',side_key);
+    // Now the mam state is set, we can add the message.
 
     //Before write the dat clear the file and add header
     fs.writeFile('data_published', '', function(err) {
@@ -78,14 +79,21 @@ fetchStartCount().then(v =>
 
     for(let i=0;i<10;i++)
     {
-        // Now the mam state is set, we can add the message.
-        publish(i);
+        //todo Make these separate functions or better a separate files
 
-        fs.appendFile('data_published', Date.now() + ',' + i+'\n', function(err) {
-            if(err) {
-                return console.log(err);
-            }
-        });
+        //For Response Time
+        //=======================
+        // publish(i);
+        //
+        // fs.appendFile('data_published', Date.now() + ',' + i+'\n', function(err) {
+        //     if(err) {
+        //         return console.log(err);
+        //     }
+        // });
+
+        //For RTT (Round trip time - Service time)
+        //=======================
+        publish(i+' '+Date.now());
     }
 
     // let newMessage = 'time_created: '+Date.now() + ' message_num: ' + 123456789111;
