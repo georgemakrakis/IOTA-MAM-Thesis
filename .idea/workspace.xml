@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetchAndPublish.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchAndPublish.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetchMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publishMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/publishMessage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="983">
-              <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -29,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/publishMessage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -51,6 +48,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>root</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -240,7 +242,7 @@
       <workItem from="1531861144154" duration="1593000" />
       <workItem from="1531901103038" duration="2957000" />
       <workItem from="1532079951381" duration="275000" />
-      <workItem from="1532192462607" duration="11333000" />
+      <workItem from="1532192462607" duration="12005000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize commit">
       <created>1521822876987</created>
@@ -326,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531904026009</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed implementation of fetchAndPublish">
+      <created>1532205940538</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532205940538</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78854000" />
+    <option name="totallyTimeSpent" value="79526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -443,7 +452,8 @@
     <MESSAGE value="Publish now writes to file, also added &quot;server&quot; just in case we need it" />
     <MESSAGE value="Some first implementation of Response time of message begun. See READ.ME" />
     <MESSAGE value="Started implementation for RTT-Service Time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started implementation for RTT-Service Time" />
+    <MESSAGE value="Changed implementation of fetchAndPublish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed implementation of fetchAndPublish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -775,14 +785,14 @@
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="983">
-          <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
         </state>
       </provider>
     </entry>
