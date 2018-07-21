@@ -3,7 +3,7 @@ let Mam = require('./lib/mam.node.js');
 let IOTA = require('iota.lib.js');
 let fs = require('fs');
 // LIVE NODE !
-let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
+    let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
 
 let yourMessage = 'First IOTA MAM Thesis send from pc at Plegma Labs';
 
@@ -93,7 +93,7 @@ fetchStartCount().then(v =>
 
         //For RTT (Round trip time - Service time)
         //=======================
-        publish(i+' '+Date.now());
+        publish('TEST2+++'+i+' '+Date.now());
     }
 
     // let newMessage = 'time_created: '+Date.now() + ' message_num: ' + 123456789111;
