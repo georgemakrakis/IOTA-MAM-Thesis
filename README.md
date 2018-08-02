@@ -3,3 +3,7 @@ Demo app using IOTA Masked Authenticated Messaging as part of my BSc thesis at I
 # Response Time Diagram
 
 <img src="response_time_implementation.jpg" width="720" height="480">
+
+# Service Time - Round Trip Time Diagram
+
+<img src="RTT_implementation.jpg" width="720" height="500">
