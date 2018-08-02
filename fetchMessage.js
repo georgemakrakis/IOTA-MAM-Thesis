@@ -54,7 +54,7 @@ const execute = async () =>
 
     let resp = await Mam.fetch(root, 'restricted', side_key, logData);
     dataOutput.forEach(function (data) {
-       console.log(data);
+       console.log(data+','+Date.now());
 
         //For Response Time
         //=======================
@@ -66,7 +66,7 @@ const execute = async () =>
 
         //For RTT (Round trip time - Service time)
         //=======================
-        fs.appendFile('data_RTT', data+'\n', function(err) {
+        fs.appendFile('data_RTT', data+','+Date.now()+'\n', function(err) {
                 if(err) {
                     return console.log(err);
                 }

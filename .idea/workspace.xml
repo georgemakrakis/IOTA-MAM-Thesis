@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetchAndPublish.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchAndPublish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetchMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchMessage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +18,8 @@
       <file leaf-file-name="fetchAndPublish.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="983">
-              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+            <state relative-caret-position="364">
+              <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -25,7 +27,7 @@
       <file leaf-file-name="publishMessage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/publishMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="-1026">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -34,8 +36,8 @@
       <file leaf-file-name="fetchMessage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fetchMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-563">
-              <caret line="30" column="38" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="38" />
+            <state relative-caret-position="198">
+              <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -101,10 +103,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1303" />
-    <option name="height" value="780" />
+    <option name="x" value="1985" />
+    <option name="y" value="7" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -112,7 +114,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,6 +126,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -137,6 +139,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -243,6 +250,9 @@
       <workItem from="1531901103038" duration="2957000" />
       <workItem from="1532079951381" duration="275000" />
       <workItem from="1532192462607" duration="12005000" />
+      <workItem from="1532206848174" duration="827000" />
+      <workItem from="1532264727028" duration="1246000" />
+      <workItem from="1533196746473" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize commit">
       <created>1521822876987</created>
@@ -335,14 +345,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532205940538</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changed implementation of fetchAndPublish">
+      <created>1532207062835</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532207062835</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79526000" />
+    <option name="totallyTimeSpent" value="81682000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="1985" y="7" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -353,8 +370,8 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502965" side_tool="true" weight="0.27151638" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3689759" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32882884" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3689759" />
       <window_info anchor="right" id="Mongo Explorer" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49703503" weight="0.2695783" />
       <window_info id="Capture Tool" order="2" />
@@ -366,8 +383,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.5060241" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.5060241" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -461,13 +478,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/fetchAndPublish.js</url>
           <line>34</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/fetchAndPublish.js</url>
           <line>42</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
@@ -711,13 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/side_key.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/side_key.txt" />
     <entry file="file://$PROJECT_DIR$/node_modules/iota.lib.js/lib/errors/requestErrors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -753,13 +762,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s33d.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" lean-forward="true" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/s33d.txt" />
     <entry file="file://$PROJECT_DIR$/messageClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -784,22 +787,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="-1026">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="983">
-          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+        <state relative-caret-position="364">
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-563">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="198">
+          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
         </state>
       </provider>
     </entry>

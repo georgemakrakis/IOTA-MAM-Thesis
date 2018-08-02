@@ -65,7 +65,7 @@ fetchStartCount().then(v =>
     mamState = Mam.changeMode(mamState, 'restricted',side_key);
 
     dataOutput.forEach(function (data) {
-        publish(data+','+Date.now());
+        publish(data);
     });
 
 }).catch(ex =>
