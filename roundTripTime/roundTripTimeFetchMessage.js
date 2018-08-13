@@ -39,13 +39,13 @@ const logData = data => dataOutput.push(JSON.parse(iota.utils.fromTrytes(data)))
 const execute = async () =>
 {
     //Before write the dat clear the file and add header
-    fs.writeFile('data_received', '', function(err) {
+    fs.writeFile('data_received_RTT', '', function(err) {
         if (err)
         {
             return console.log(err);
         }
     });
-    fs.appendFile('data_received', 'time_received,message_num' +'\n', function(err) {
+    fs.appendFile('data_received_RTT', 'message_num,time_send,time_received' +'\n', function(err) {
         if (err)
         {
             return console.log(err);
@@ -54,23 +54,14 @@ const execute = async () =>
 
     let resp = await Mam.fetch(root, 'restricted', side_key, logData);
     dataOutput.forEach(function (data) {
-       console.log(data+','+Date.now());
-
-        //For Response Time
-        //=======================
-        // fs.appendFile('data_received', Date.now() + ',' + data+'\n', function(err) {
-        //     if(err) {
-        //         return console.log(err);
-        //     }
-        // });
-
+        console.log(data+','+Date.now());
         //For RTT (Round trip time - Service time)
         //=======================
-        fs.appendFile('data_RTT', data+','+Date.now()+'\n', function(err) {
-                if(err) { 
-                    return console.log(err);
-                }
-            });
+        fs.appendFile('data_received_RTT', data+','+Date.now()+'\n', function(err) {
+            if(err) {
+                return console.log(err);
+            }
+        });
     });
     console.log(resp);
 };

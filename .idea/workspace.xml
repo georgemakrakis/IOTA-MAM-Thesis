@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="">
+    <list default="true" id="c7ee942e-cbb5-4440-b526-ec0b1e8fda68" name="Default" comment="Added a more correct implementation for RTT">
+      <change afterPath="$PROJECT_DIR$/responseTime/responseTimeFetchMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/responseTime/responseTimePublishMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roundTripTime/roundTripTimeFetchAndPublish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roundTripTime/roundTripTimeFetchMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roundTripTime/roundTripTimePublishMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetchAndPublish.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchAndPublish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fetchMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetchMessage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,29 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fetchAndPublish.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
+      <file leaf-file-name="responseTimePublishMessage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/responseTime/responseTimePublishMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+            <state relative-caret-position="54">
+              <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publishMessage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/publishMessage.js">
+      <file leaf-file-name="responseTimeFetchMessage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/responseTime/responseTimeFetchMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1026">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fetchMessage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fetchMessage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+            <state relative-caret-position="414">
+              <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -79,6 +74,11 @@
         <option value="$PROJECT_DIR$/publishMessage.js" />
         <option value="$PROJECT_DIR$/fetchAndPublish.js" />
         <option value="$PROJECT_DIR$/fetchMessage.js" />
+        <option value="$PROJECT_DIR$/roundTripTime/roundTripTimePublishMessage.js" />
+        <option value="$PROJECT_DIR$/roundTripTime/roundTripTimefetchAndPublish.js" />
+        <option value="$PROJECT_DIR$/roundTripTime/roundTripTimeFetchMessage.js" />
+        <option value="$PROJECT_DIR$/responseTime/responseTimePublishMessage.js" />
+        <option value="$PROJECT_DIR$/responseTime/responseTimeFetchMessage.js" />
       </list>
     </option>
   </component>
@@ -103,10 +103,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1985" />
-    <option name="y" value="7" />
-    <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="x" value="64" />
+    <option name="y" value="-11" />
+    <option name="width" value="1303" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -114,6 +114,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,12 +123,20 @@
               <item name="IOTA-MAM-Thesis" type="b2602c69:ProjectViewProjectNode" />
               <item name="IOTA-MAM-Thesis" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="IOTA-MAM-Thesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IOTA-MAM-Thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="responseTime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IOTA-MAM-Thesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IOTA-MAM-Thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="roundTripTime" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -252,7 +262,9 @@
       <workItem from="1532192462607" duration="12005000" />
       <workItem from="1532206848174" duration="827000" />
       <workItem from="1532264727028" duration="1246000" />
-      <workItem from="1533196746473" duration="83000" />
+      <workItem from="1533196746473" duration="1040000" />
+      <workItem from="1533635724440" duration="165000" />
+      <workItem from="1534155833554" duration="1030000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize commit">
       <created>1521822876987</created>
@@ -352,14 +364,28 @@
       <option name="project" value="LOCAL" />
       <updated>1532207062835</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added a more correct implementation for RTT">
+      <created>1533196862407</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1533196862407</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added a more correct implementation for RTT">
+      <created>1533197003655</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533197003655</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81682000" />
+    <option name="totallyTimeSpent" value="83834000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="7" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -376,7 +402,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49703503" weight="0.2695783" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16602613" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16602613" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="SciView" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -470,7 +496,8 @@
     <MESSAGE value="Some first implementation of Response time of message begun. See READ.ME" />
     <MESSAGE value="Started implementation for RTT-Service Time" />
     <MESSAGE value="Changed implementation of fetchAndPublish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed implementation of fetchAndPublish" />
+    <MESSAGE value="Added a more correct implementation for RTT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a more correct implementation for RTT" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -490,35 +517,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/publishMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fetchMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/publishMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fetchMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/s33d.txt" />
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -785,24 +783,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fetchMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="69" column="26" selection-end-line="77" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/publishMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="-1152">
+          <caret line="15" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchAndPublish.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+        <state relative-caret-position="378">
+          <caret line="67" column="20" selection-end-line="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fetchMessage.js">
+    <entry file="file://$PROJECT_DIR$/roundTripTime/roundTripTimeFetchAndPublish.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        <state relative-caret-position="180">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roundTripTime/roundTripTimePublishMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roundTripTime/roundTripTimeFetchMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/responseTime/responseTimeFetchMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/responseTime/responseTimePublishMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
         </state>
       </provider>
     </entry>
