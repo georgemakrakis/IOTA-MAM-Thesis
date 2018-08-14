@@ -1,5 +1,5 @@
 // Thanks to Lewis -the potatoe- Freiberg for the code, we made some edits :) //
-let Mam = require('./lib/mam.node.js');
+let Mam = require('../lib/mam.node.js');
 let IOTA = require('iota.lib.js');
 let fs = require('fs');
 // LIVE NODE !
@@ -8,8 +8,8 @@ let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
 let yourMessage = 'First IOTA MAM Thesis send from pc at Plegma Labs';
 
 //SEED must be 81 chars of A-Z9 //
-let seed = fs.readFileSync('s33d.txt', 'utf8');
-let side_key = fs.readFileSync('side_key.txt','utf8');
+let seed = fs.readFileSync('../s33d.txt', 'utf8');
+let side_key = fs.readFileSync('../side_key.txt','utf8');
 
 //This was in case tha a newline character was at the end of file
 //seed = seed.slice(0, -1);
