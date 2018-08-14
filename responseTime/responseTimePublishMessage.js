@@ -84,7 +84,7 @@ fetchStartCount().then(v =>
         //=======================
         publish(i);
 
-        fs.appendFile('data_published', i+',' + Date.now() +'\n', function(err) {
+        fs.appendFile('data_published_responseTime', i+',' + Date.now() +'\n', function(err) {
             if(err) {
                 return console.log(err);
             }
