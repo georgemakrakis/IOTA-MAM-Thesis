@@ -1,16 +1,16 @@
-let Mam = require('./lib/mam.node.js');
+let Mam = require('../lib/mam.node.js');
 let fs = require('fs');
 let IOTA = require('iota.lib.js');
 let iota = new IOTA({ provider: `https://nodes.testnet.iota.org` });
 
 // Init State
 // INSERT THE ROOT IN HERE!
-let root = 'DWPXLYEQHAKRCLSMLWDDVKKFCNRMAYKOWSJAPMTHKVZAPLZZD9SXZIBHTWZU9RDUGUUGVFKWWVJRNWVAR';
+let root = 'AXRONNIXBTGFCJVPKOJMFOZJWSZXWIRMIGPBQVZLECIPTEHNUX9QUBWBZTWTLVBSIDFRODHXJXBTMKPNM';
 
 // Initialise MAM State
 let mamState = Mam.init(iota);
 
-let side_key = fs.readFileSync('side_key.txt','utf8');
+let side_key = fs.readFileSync('../side_key.txt','utf8');
 
 // Publish to tangle
 const publish = async packet =>
