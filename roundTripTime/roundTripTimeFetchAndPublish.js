@@ -64,9 +64,11 @@ fetchStartCount().then(v =>
     mamState = Mam.init(iota, seed, 2, startCount);
     mamState = Mam.changeMode(mamState, 'restricted',side_key);
 
-    dataOutput.forEach(function (data) {
+    let tempArr = dataOutput.slice(Math.max(dataOutput.length - 10, 0))
+    tempArr.forEach(function (data) {
         publish(data);
     });
+
 
 }).catch(ex =>
 {
